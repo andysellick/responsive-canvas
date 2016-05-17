@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" id="site" class="nojs">
+<head>
+    <title>Responsive canvas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <style>
+    	body {
+    		padding:10px;
+    		margin:0;
+    	}
+    	.canvaswrapper {
+    		position:absolute;
+    		top:2%;
+    		left:2%;
+    		width:96%;
+    		height:96%;
+    		background:silver;
+    	}
+    	.canvaswrapper .canvas {
+    		display:block;
+    		margin:0 auto;
+    		outline:dashed 2px green;
+    		background:rgba(50,50,50,0.5);
+    	}
+    </style>
+</head>
+
+<body>
+	<div id="canvasparent" class="canvaswrapper">
+		<canvas id="canvas" class="canvas"></canvas>
+	</div>
+
+    <!--[if lt IE 9 ]>
+    <script>(function() {$('body').addClass('iex');})();</script>
+    <![endif]-->
+    <script src="static/js/main.min.js"></script>
+
+</body>
+</html>
